@@ -1,8 +1,12 @@
+"use client";
 import Image from "next/image"
 import { NAV_LINKS } from "@/constants"
 import Link from "next/link"
 import Button from "./Button"
 const Navbar = () => {
+  const sayClick = () => {
+    console.log("Hello Next")
+  }
   return (
     <nav className="  flexBetween max-container padding-container relative z-30 py-5">
      <Link href="/">
@@ -16,7 +20,7 @@ const Navbar = () => {
       }
     </ul>
     <div className="lg:flexCenter hidden">
-     <Button type="button" title="Login" variant="btn_dark_green" icon="/user.svg" />
+     <Button onClick={sayClick} type="button" title="Login" variant="btn_dark_green" icon="/user.svg" />
     </div>
     <Image src="menu.svg" alt="menu" width={32} height={32} className=" inline-block cursor-pointer lg:hidden" />
     </nav>
