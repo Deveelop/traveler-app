@@ -79,7 +79,7 @@ const Camp = () => {
           alt="camp-2"
           width={186}
           height={219}
-          className="camp-qoute"
+          className="camp-quote"
           
           />
         </div>
